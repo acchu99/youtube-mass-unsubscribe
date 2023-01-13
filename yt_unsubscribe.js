@@ -16,7 +16,7 @@
 
   var ctr = 0;
   for (const channel of channels) {
-    channel.querySelector(`[aria-label^='Unsubscribe from']`).click();
+    channel.querySelector(`.yt-spec-touch-feedback-shape__fill`).click();
     await runAfterDelay(() => {
       document
         .getElementsByTagName(`yt-confirm-dialog-renderer`)[0]
